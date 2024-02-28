@@ -1,0 +1,48 @@
+{
+  "name": "@verida/storage-node-registry",
+  "description": "Register storage node operator.",
+  "version": "1.0.0",
+  "author": "Alex J <alex@verida.io>m trust2ray@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:verida/blockchain-contracts.git"
+  },
+  "files": [
+    "artifacts",
+    "contracts",
+    "typechain-types"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.1",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.0",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.1",
+    "hardhat": "^2.19.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "build": "npx hardhat compile",
+    "run": "npx hardhat run",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "verify": "npx hardhat verify", 
+    "verify-all": "npx hardhat run scripts/verify.ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}
